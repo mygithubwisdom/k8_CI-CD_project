@@ -461,8 +461,8 @@ kubectl describe service fashion-webapp-service
 - **Responsive Design**: Mobile-friendly interface
 - **Search Functionality**: Find products quickly
 - **User Profile**: Manage account settings
-- <img width="1366" height="768" alt="Screenshot (1244)" src="https://github.com/user-attachments/assets/031dd140-46a8-4b2c-9eff-b985a6818fb3" />
-<img width="1366" height="768" alt="Screenshot (1242)" src="https://github.com/user-attachments/assets/d8a73d76-9482-4901-abc0-e86e9ed5aae5" />
+<img width="1366" height="725" alt="Screenshot (1244)" src="https://github.com/user-attachments/assets/6dfe1485-6be1-47de-86a8-8dadec1e3acb" />
+<img width="1366" height="734" alt="Screenshot (1243)" src="https://github.com/user-attachments/assets/a1046fb8-9561-41c0-ba7f-b5d63f9718ac" />
 
 
 ## 🐛 Troubleshooting
