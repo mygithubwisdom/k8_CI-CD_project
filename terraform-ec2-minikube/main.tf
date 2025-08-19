@@ -5,16 +5,15 @@ terraform {
       version = "~> 5.0" # Specify a suitable AWS provider version
     }
   }
-}
-
+ }
 provider "aws" {
-  region = var.aws_region
+  region = "us-east-1"
 }
 
 resource "aws_instance" "minikube_instance" {
   ami                    = var.ami_id
   instance_type          = var.instance_type
-  key_name               = var.key_name
+  key_name               = "ubuntutask"
   vpc_security_group_ids = [aws_security_group.minikube_sg.id]
   user_data              = <<-EOF
     #!/bin/bash
@@ -71,3 +70,11 @@ resource "aws_security_group" "minikube_sg" {
     value       = aws_instance.minikube_instance.public_ip
     description = "The public IP address of the EC2 instance"
   }
+
+  # Create a VPC
+ resource "aws_vpc" "fashion_webapp_VPC" {
+  cidr_block = var.vpc_cidr #"10.0.0.0/16"
+  tags = {
+    Name = var.vpc_name
+  }
+}
